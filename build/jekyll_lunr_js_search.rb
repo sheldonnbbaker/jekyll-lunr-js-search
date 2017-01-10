@@ -82,7 +82,9 @@ module Jekyll
           @index.add(doc)
           doc.delete("body")
           @docs[i] = doc
-
+          
+          Jekyll.logger.debug "WTF"
+          Jekyll.logger.debug entry.collection
           Jekyll.logger.debug "Lunr:", (entry.title ? "#{entry.title} (#{entry.url})" : entry.url)
         end
 
