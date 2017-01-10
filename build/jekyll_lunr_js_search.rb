@@ -76,7 +76,7 @@ module Jekyll
             "tags" => entry.tags,
             "is_post" => entry.is_post,
             "body" => entry.body,
-            "collection" => entry.collection
+            "collection" => 'test'
           }
 
           @index.add(doc)
